@@ -7,7 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS with 
 function App() {
   return (
     <div className="container-fluid border border-3 border-primary vh-100 ">
-      <div className="row  d-sm-none d-block">
+      <div className="row  d-sm-none d-block  fixed-top h-auto">
         {/* div open from right */}
 
         <nav className="w-15 navbar navbar-dark bg-dark  ">
@@ -22,7 +22,7 @@ function App() {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div
-              className="offcanvas offcanvas-start text-bg-dark"
+              className="offcanvas offcanvas-start text-bg-dark w-50"
               tabIndex="-1"
               id="offcanvasDarkNavbar"
               aria-labelledby="offcanvasDarkNavbarLabel"
@@ -38,6 +38,20 @@ function App() {
                   aria-label="Close"
                 ></button>
               </div>
+              <ul>
+                <li>
+                  <span className="firstLetters">MN</span>{" "}
+                  <span className="Names">My Name</span>{" "}
+                </li>
+                <li>
+                  <span className="firstLetters">MN</span>{" "}
+                  <span className="Names">My Name</span>{" "}
+                </li>
+                <li>
+                  <span className="firstLetters">MN</span>{" "}
+                  <span className="Names">My Name</span>{" "}
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
