@@ -1,6 +1,7 @@
 .containerDIv {
   overflow: auto;
   height: 99vh;
+  position: relative;
 }
 .Pocket_NotesTxt {
   border: 1px solid;
@@ -9,4 +10,33 @@
   position: sticky;
   top: 0;
   background-color: white;
+}
+.addGroupBtn {
+  position: fixed;
+  bottom: 7%;
+  left: 13%;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  font-weight: bolder;
+  background-color: #16008d;
+  color: white;
+  margin: 0;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addGroupBtn > p {
+  margin-bottom: 13%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addGroupBtn:hover{
+    transition: all 0.2s ease-in;
+    transform: scale(0.96);
 }
