@@ -1,18 +1,3 @@
-.containerDIv {
-  overflow: auto;
-  height: 99vh;
-  position: relative;
-}
-.Pocket_NotesTxt {
-  border: 1px solid;
-  text-align: center;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  background-color: white;
-}
-
-
 .addGroupBtn {
   position: fixed;
   bottom: 7%;
@@ -38,7 +23,13 @@
   align-items: center;
   justify-content: center;
 }
-.addGroupBtn:hover{
-    transition: all 0.2s ease-in;
-    transform: scale(0.96);
+.addGroupBtn:hover {
+  transition: all 0.2s ease-in;
+  transform: scale(0.96);
 }
+@media (max-width: 540px) {
+  .addGroupBtn {
+    left: 5%;
+  }
+}
+

@@ -1,11 +1,8 @@
-import OpenModal from "../PlusIcon_ToOpen_Modal/OpenModal";
-import leftCss from "./pocket_Notes.module.css";
-
-const Pocket_Notes = () => {
+import leftCss from "../../Components/PlusIcon_ToOpen_Modal/plusIcon_modal.module.css";
+const OpenModal = () => {
   return (
-    <div className={leftCss.containerDIv}>
-      <h4 className={leftCss.Pocket_NotesTxt}>Pocket_Notes</h4>
-      {/* <button
+    <div className=" z-index-50  ">
+      <button
         className={leftCss.addGroupBtn}
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
@@ -14,7 +11,7 @@ const Pocket_Notes = () => {
       </button>
 
       <div
-        className="modal fade z-index-10"
+        className="modal fade z-index-10 "
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
@@ -22,7 +19,7 @@ const Pocket_Notes = () => {
       >
         <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable z-index-20">
           <div className="modal-content z-index-30">
-            <div className="modal-header">
+            <div className="modal-header ">
               <h5 className="modal-title" id="exampleModalLabel">
                 Create New group
               </h5>
@@ -33,9 +30,9 @@ const Pocket_Notes = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body ">
-              <div className="container d-flex border align-items-center justify-content-around">
-                <h5 className="m-0 p-0">Group Name</h5>
+            <div className="modal-body fs-6">
+              <div className="container d-flex border align-items-center justify-content-around  ">
+                <h5 className="m-0 p-0 fs-6">Group Name</h5>
                 <input
                   type="text"
                   placeholder="Enter group name"
@@ -44,8 +41,8 @@ const Pocket_Notes = () => {
                 />
               </div>
               <div className="container border border-primary d-flex border align-items-center justify-content-between">
-                <h5 className="m-0 p-0">Choose colour</h5>
-                <div className="border border-warning h-4 d-flex align-items-center justify-content-center gap-2">
+                <h5 className="m-0 p-0 fs-6">Choose colour</h5>
+                <div className="border border-warning h-4 d-flex flex-wrap align-items-center justify-content-center gap-2 gap-xs-0">
                   <p
                     className=" m-0 p-0 rounded-circle d-flex align-items-center justify-content-center "
                     style={{
@@ -116,12 +113,9 @@ const Pocket_Notes = () => {
             </div>
           </div>
         </div>
-      </div> */}
-      {/*  */}
-
-      <OpenModal />
+      </div>
     </div>
   );
 };
 
-export default Pocket_Notes;
+export default OpenModal;

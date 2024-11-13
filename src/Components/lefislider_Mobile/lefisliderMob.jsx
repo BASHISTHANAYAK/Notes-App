@@ -1,17 +1,10 @@
-import "./App.css";
-import LefisliderMob from "./Components/lefislider_Mobile/lefisliderMob";
-import MessagesRightSide from "./Components/Messages-RightSide/messages-RightSide";
-import Pocket_Notes from "./Components/Pocket_Notes-LeftSide/pocket_Notes";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS with Popper
+import OpenModal from "../PlusIcon_ToOpen_Modal/OpenModal";
 
-function App() {
+const LefisliderMob = () => {
   return (
-    <div className="container-fluid border border-3 border-primary vh-100 ">
-      {/* <div className="row  d-sm-none d-block  fixed-top "> */}
-      {/* div open from right */}
-
-      {/* <nav className=" navbar navbar-dark bg-dark  p-2">
+    <div>
+      <div className="row  d-sm-none d-block  fixed-top ">
+        <nav className=" navbar navbar-dark bg-dark  p-2 ">
           <div className="container-fluid">
             <button
               className="navbar-toggler p-0"
@@ -32,6 +25,7 @@ function App() {
                 <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
                   Dark offcanvas
                 </h5>
+
                 <button
                   type="button"
                   className="btn-close btn-close-white"
@@ -55,21 +49,11 @@ function App() {
               </ul>
             </div>
           </div>
-        </nav> */}
-      <LefisliderMob />
-
-      {/*div open from right  */}
-      {/* </div> */}
-      <div className="row ">
-        <div className="d-none d-sm-block col-sm-3 col-md-3 col-lg-2 border border-danger p-0 ">
-          <Pocket_Notes />
-        </div>
-        <div className="col-12 col-sm-9 col-md-9 col-lg-10 border border-success p-0">
-          <MessagesRightSide />
-        </div>
+        </nav>
       </div>
+      <OpenModal />
     </div>
   );
-}
+};
 
-export default App;
+export default LefisliderMob;
