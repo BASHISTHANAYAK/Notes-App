@@ -1,0 +1,12 @@
+.containerDIv {
+  overflow: auto;
+  height: 99vh;
+}
+.Pocket_NotesTxt {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}

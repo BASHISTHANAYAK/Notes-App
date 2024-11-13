@@ -1,12 +1,9 @@
 .mainDiv{
-    border: 3px solid red;
-    height: 100%;
+    border: 2px solid red;
+    height: 99vh;
     width: 100%;
     background-color: rgb(218, 230, 246);
-    background-image: url(../../../public/Images/PocketNotes_Img.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+   
 }
 .pocketImg{
     border: 3px solid;
